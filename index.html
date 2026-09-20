@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Te Linde Study Modules</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@700;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#c0392b;--teal:#1a7a6e;--paper:#f8f5f0;--ink:#1a1814;--muted:#5c5850;
+ --rule:#d4cec6;--highlight:#fff7e6;--warn:#8b4513;--surface:#f0ece4;
+ --shadow:0 1px 2px rgba(26,24,20,.05),0 6px 18px rgba(26,24,20,.07);
+ --shadow-lift:0 2px 4px rgba(26,24,20,.06),0 14px 32px rgba(26,24,20,.11);
+ color-scheme:only light; padding-top:env(safe-area-inset-top,0px);
+ padding-bottom:env(safe-area-inset-bottom,0px); box-sizing:border-box}
+*{box-sizing:border-box}
+html,body{background:var(--paper)}
+body{margin:0;color:var(--ink);font-family:"Source Serif 4",Georgia,serif;font-size:1.05rem;line-height:1.62}
+h1,h3{font-family:"Playfair Display",Georgia,serif;font-weight:700;line-height:1.18;margin:0}
+.wrap{max-width:820px;margin:0 auto;padding:0 22px}
+header{border-bottom:1px solid var(--rule);background:var(--surface)}
+header .wrap{padding:34px 22px 26px}
+.kicker{font-family:"DM Mono",ui-monospace,monospace;font-size:.68rem;letter-spacing:.16em;
+ text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+h1{font-size:clamp(1.9rem,4.6vw,2.7rem);letter-spacing:-.01em}
+.sourceline{font-family:"DM Mono",ui-monospace,monospace;font-size:.72rem;color:var(--muted);margin-top:12px}
+main .wrap{padding-top:32px;padding-bottom:50px}
+.lead{font-size:1.2rem;line-height:1.5;margin:0 0 24px;max-width:64ch}
+a.card{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--rule);
+ border-left:3px solid var(--accent);border-radius:3px;padding:19px 20px 20px;margin:0 0 14px;
+ box-shadow:var(--shadow);transition:transform .16s ease,box-shadow .16s ease}
+a.card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lift)}
+a.card .tag{font-family:"DM Mono",ui-monospace,monospace;font-size:.62rem;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--teal);display:block;margin-bottom:7px}
+a.card h3{font-size:1.3rem;margin-bottom:6px}
+a.card p{font-size:.96rem;color:var(--muted);margin:0;line-height:1.5}
+.callout{border:1px solid var(--rule);border-left:3px solid var(--warn);background:#fdf1ee;
+ border-radius:3px;padding:15px 17px;margin:26px 0;box-shadow:var(--shadow)}
+.callout .h{font-family:"DM Mono",ui-monospace,monospace;font-size:.63rem;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--warn);display:block;margin-bottom:7px}
+.callout p{margin:0 0 10px}
+.callout p:last-child{margin-bottom:0}
+footer{border-top:1px solid var(--rule);background:var(--surface);margin-top:20px}
+footer .wrap{padding:22px 22px 34px}
+footer p{font-family:"DM Mono",ui-monospace,monospace;font-size:.66rem;color:var(--muted);line-height:1.9}
+</style></head><body>
+
+<header><div class="wrap">
+<div class="kicker">Te Linde&rsquo;s Operative Gynecology</div>
+<h1>Interactive study modules</h1>
+<div class="sourceline">Self-contained HTML &mdash; each page opens on its own, with figures embedded</div>
+</div></header>
+
+<main><div class="wrap">
+<p class="lead">Chapter modules built from the source text, in the OrthoRef light editorial template. Each
+carries a classification explorer, a step walkthrough, and click-to-enlarge figures with the book&rsquo;s own
+captions.</p>
+
+<a class="card" href="ch01-surgical-anatomy.html">
+<span class="tag">Chapter 1 &middot; five modules &middot; 31 figures</span>
+<h3>Surgical Anatomy of the Female Pelvis</h3>
+<p>Abdominal wall, vulva and perineum, pelvic floor, pelvic viscera, and connective tissue and spaces. Corton &amp; DeLancey.</p></a>
+
+<a class="card" href="ch24-laparoscopic-hysterectomy.html">
+<span class="tag">Chapter 24 &middot; six tabs &middot; 9 figures</span>
+<h3>Laparoscopic Hysterectomy</h3>
+<p>TLH and LSH: anatomy, procedure classification, patient selection, a nine-step operative walkthrough, and complications. Robotic-assisted content excluded. Anderson &amp; Alvarez.</p></a>
+
+<div class="callout"><span class="h">Coverage notes</span>
+<p><b>Chapter 1</b> stops at the rectovaginal space. The sacrospinous ligament region, retroperitoneal spaces
+and lateral pelvic wall, structures above the pelvic brim, presacral space and pelvic lymphatics are not
+represented. Tables 1.1 and 1.2 carry the wrong artwork in the source file and were left out; the pages use
+tables reconstructed from the narrative and say so.</p>
+<p><b>Chapter 24</b> omits robotic-assisted hysterectomy throughout, including panels C and D of Figure 24.1.</p>
+</div>
+</div></main>
+
+<footer><div class="wrap"><p>
+Source: Te Linde&rsquo;s Operative Gynecology. Built for personal study use.<br>
+Figure artwork remains the copyright of its original holders.
+</p></div></footer>
+</body></html>
